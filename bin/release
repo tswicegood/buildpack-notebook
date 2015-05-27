@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# bin/release <build-dir>
+
+cat <<EOF
+---
+config_vars:
+  PATH: /app/.heroku/miniconda/envs/heroku-env/bin:/app/.heroku/anaconda/bin:/usr/local/bin:/usr/bin:/bin
+  CONDA_DEFAULT_ENV: heroku-env
+EOF
