@@ -124,7 +124,7 @@ if test -f $build_dir/Procfile; then
   puts-step "Using Procfile"
 else
   puts-step "Creating default Procfile"
-  echo "web: /app/.heroku/miniconda/envs/heroku-env/bin/ipython notebook --config=/app --ip=0.0.0.0 --port=\$PORT --no-browser" > $build_dir/Procfile
+  echo "web: /app/.heroku/miniconda/envs/heroku-env/bin/ipython notebook --config=/app --ip=0.0.0.0 --port=\$PORT --no-browser" > $1/Procfile
 fi
 
 # ### Fin.
