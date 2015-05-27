@@ -1,0 +1,9 @@
+#!/bin/bash
+
+matches=$(find $1 -maxdepth 1 -name "*.ipynb")
+if [[ -n "$matches" ]]; then
+  echo "Conda Notebooks"
+  exit 0
+else
+  exit 1
+fi
