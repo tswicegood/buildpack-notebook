@@ -54,9 +54,6 @@ export LANG=en_US.UTF-8
 # Switch to the repo's context.
 cd $BUILD_DIR
 
-# Experimental pre_compile hook.
-source $BIN_DIR/steps/hooks/pre_compile
-
 # ### The Cache
 mkdir -p $CACHE_DIR
 
