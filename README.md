@@ -21,4 +21,4 @@ heroku config:set BUILDPACK_URL=https://github.com/tswicegood/buildpack-notebook
 [conda]: http://conda.io/
 [Flynn]: http://flynn.io/
 [Heroku]: http://heroku.com/
-[jupyter] https://jupyter.org/
+[jupyter]: https://jupyter.org/
