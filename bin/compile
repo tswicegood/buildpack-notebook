@@ -74,7 +74,7 @@ mkdir -p $(dirname $PROFILE_PATH)
 CONDA_VERSION=3.10.1
 if [ ! -d /app/.heroku/miniconda ]; then
   puts-step "Preparing Python Environment (${CONDA_VERSION})"
-  curl -Os http://repo.continuum.io/miniconda/Miniconda-${CONDA_VERSION}-Linux-x86_64.sh
+  curl -Os https://repo.continuum.io/miniconda/Miniconda-${CONDA_VERSION}-Linux-x86_64.sh
   bash Miniconda-${CONDA_VERSION}-Linux-x86_64.sh -p /app/.heroku/miniconda/ -b | indent
   rm -fr Miniconda-${CONDA_VERSION}-Linux-x86_64.sh
 
